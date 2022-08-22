@@ -11,7 +11,7 @@ These code chunks will be able to copy and paste into Arcade Windows.
 
 ### *MK18 Ground Truth* 
 
-`
+```
 var type = $feature.mine_type;
 var status = $feature.status;
 var result = when(
@@ -23,10 +23,25 @@ status == 'Plumbed', 'MK18',
 status == 'Planned', 'MK18',
 'MK18')
 return result
-`
+```
 
 ## **Popups**
 
 ### *Download SHP*
+```
+var dwn = $feature["down_shp"];
+var result = IIF(isEmpty(dwn) == True, 'Download Unavailable', "Download SHP");
+return result
+```
 
-### 
+### *Download GeoTiff*
+```
+var dwn = $feature["down_tif"];
+var result = IIF(isEmpty(dwn) == True, 'Download Unavailable', "Download GeoTiff");
+return result
+```
+
+### *Mission Name*
+```
+
+```
