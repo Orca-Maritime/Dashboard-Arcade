@@ -41,7 +41,23 @@ var result = IIF(isEmpty(dwn) == True, 'Download Unavailable', "Download GeoTiff
 return result
 ```
 
-### *Mission Name*
+### *Mailto*
+```
+var name = $feature.name;
+var email = "gis@orcamaritime.com";
+var subject = "Request: " + name;
+var body = "If requesting more than three files please consolidate all of the mission names to one list in one email. Thank you."
+var params = {subject: subject,
+              body: body};
+
+var url = "mailto:" + email + "?" + UrlEncode(params);
+//url = Replace(url, "TextFormatting.NewLine", "%0D%0A");
+return url;
 ```
 
+### *Year*
+```
+var yearText = Text($feature.year);
+var result = replace(yearText, ',', '');
+return result
 ```
