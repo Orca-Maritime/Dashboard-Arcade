@@ -61,3 +61,11 @@ var yearText = Text($feature.year);
 var result = replace(yearText, ',', '');
 return result
 ```
+
+### *Date*
+```
+var d = $feature.date;
+var utc = toUTC(d);
+var date_text = Text(utc, "M/D/Y");
+return date_text
+```
