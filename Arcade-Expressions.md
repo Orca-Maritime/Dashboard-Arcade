@@ -193,4 +193,3 @@ var result = When(
 return result
 ```
 
-Katie Edit
