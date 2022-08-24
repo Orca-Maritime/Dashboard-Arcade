@@ -191,6 +191,4 @@ var result = When(
     IsEmpty(meters) == True, 'Unkown',
     feet + " (ft)/" + meters + " (m)");
 return result
-```
 
-Katie Edit2
