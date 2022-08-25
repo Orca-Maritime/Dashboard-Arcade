@@ -133,7 +133,7 @@ var params = {subject: subject,
 
 var url = "mailto:" + email + "?" + UrlEncode(params);
 //url = Replace(url, "TextFormatting.NewLine", "%0D%0A");
-return url;
+return url
 ```
 
 #### *Year - SF*
