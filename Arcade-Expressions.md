@@ -139,7 +139,8 @@ return url
 #### *Year - SF*
 ```
 var yearText = Text($feature.year);
-var result = replace(yearText, ',', '');
+var x = replace(yearText, ',', '');
+var result = IIF(isEmpty(x) == True, "Unknown", x);
 return result
 ```
 
