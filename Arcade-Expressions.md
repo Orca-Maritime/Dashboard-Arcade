@@ -193,3 +193,25 @@ var result = When(
     feet + " (ft)/" + meters + " (m)");
 return result
 ```
+
+### Bottokm Complexity
+
+#### *Bottom Complexity - San Diego*
+```
+var complexity = $feature[complex]
+
+```
+
+### California Marine Protected Areas
+
+#### *Study Region*
+```
+var studyRegion = $feature["study_regi"];
+var result = WHEN(
+    studyRegion == "SCSR", "Southern California",
+    studyRegion == "NCSR", "Northern California",
+    studyRegion == "CCSR", "Central California",
+    studyRegion == "NCCSR", "Northern Central California",
+    "San Francisco Bay");
+return result
+```
